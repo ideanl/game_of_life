@@ -1,0 +1,17 @@
+!!! 5
+%html{style: 'height: 100%'}
+  %head
+    %title Game of Life
+    %link{rel: 'stylesheet', href: '/stylesheets/application.css'}
+    %link{rel: 'stylesheet', href: '/stylesheets/bootstrap.css'}
+    %script{src: '/javascripts/jquery.js'}
+    %script{src: '/javascripts/bootstrap.js'}
+    %script{src: '/javascripts/main.js'}
+  %body{style: 'height: 100%'}
+    .navbar{style: 'background-color: #009999; border-radius: 0px;'}
+      .container{style: 'margin-top: 13px;'}
+        %h3{style: 'display:inline;'} Welcome to Game of Life
+        %a.play.pull-right{href: '#', style: 'font-size: 18px;color:inherit;'} Play Game
+    .container{style: 'background-color: #D0D0D0;border-radius:5px;height:80%'}
+      =yield
+
